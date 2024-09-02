@@ -3,6 +3,8 @@
 
 ### Eclipse ###
 .metadata
+.mylyn
+.plugins
 bin/
 tmp/
 *.tmp
