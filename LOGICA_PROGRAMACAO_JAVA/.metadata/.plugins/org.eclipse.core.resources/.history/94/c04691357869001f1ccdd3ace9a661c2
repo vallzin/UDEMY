@@ -1,0 +1,10 @@
+package EstruturaRepeticao;
+
+public class Exercicio_Media_Aluno_Turma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

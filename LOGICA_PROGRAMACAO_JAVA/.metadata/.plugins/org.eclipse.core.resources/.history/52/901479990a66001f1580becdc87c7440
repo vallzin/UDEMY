@@ -1,0 +1,26 @@
+package ComandoDecisaoJava;
+
+public class Funcao_IF {
+
+	public static void main(String[] args) {
+		
+		
+		int num = 10;
+		/*
+		 * '==' -> Igual <==> Equals
+		 * '!=' -> Diferente
+		 * '>'  -> Maior
+		 * '<'  -> Menor
+		 * '>=' -> Maior ou igual
+		 * '<=' -> Menor ou igual
+		 * */
+		//If -> Se
+		if(num >= 10) {
+			
+			System.out.println("O número é maior do que 10");
+		// else -> Senão	
+		}else {
+			System.out.println("O número é menor do que 10");
+		}
+	}
+}

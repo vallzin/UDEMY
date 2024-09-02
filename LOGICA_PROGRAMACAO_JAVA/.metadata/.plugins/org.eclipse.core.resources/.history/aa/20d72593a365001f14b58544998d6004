@@ -1,0 +1,20 @@
+package PrimeirosPassos;
+
+import java.util.Scanner;
+
+public class ScannerJava {
+
+	public static void main(String[] args) {
+		
+		//new -> Instância um objeto da classe
+		//Scanner -> objeto da classe Scanner
+		//System.in -> lê as informações do teclado
+		Scanner objetoNome = new Scanner(System.in);
+		
+		String nome = objetoNome.nextLine();
+		
+		System.out.println("Nome digitado: " + nome);
+
+	}
+
+}

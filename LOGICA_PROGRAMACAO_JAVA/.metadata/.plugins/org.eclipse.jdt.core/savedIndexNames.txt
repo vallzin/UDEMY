@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+F:\UDEMY\LOGICA_PROGRAMACAO_JAVA\.metadata\.plugins\org.eclipse.jdt.core
+2468618462.index
+3133850757.index
+1874095011.index
+1865797976.index
+2296838412.index
+3413270776.index
