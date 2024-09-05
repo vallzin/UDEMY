@@ -17,7 +17,7 @@ public class SorteioNumero {
 		
 		while(acertou == false) {
 			
-			System.out.println("Digite um número entre zero e cem");
+			System.out.println("Digite um número entre zero e cem: ");
 			palpite = sc.nextInt();
 			tentativas++;
 			
