@@ -1,6 +1,6 @@
-package EstruturaRepeticao;
+package testeprojeto;
 
-public class Exercicio_Media_Aluno_Turma {
+public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
