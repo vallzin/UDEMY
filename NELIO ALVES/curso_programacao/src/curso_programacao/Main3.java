@@ -14,6 +14,7 @@ public class Main3 {
 		s2 = sc.nextLine();
 		s3 = sc.nextLine();
 		
+		System.out.println();
 		System.out.println("Dados digitados: ");
 		System.out.println(s1);
 		System.out.println(s2);
