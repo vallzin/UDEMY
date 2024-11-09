@@ -29,6 +29,8 @@ public class exer06 {
 		double areaR = A * B;
 		System.out.printf("RETÂNGULO: %.3f%n", areaR );
 		
+		sc.close();
+		
 		
 		
 		
