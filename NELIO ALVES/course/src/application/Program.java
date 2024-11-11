@@ -34,13 +34,15 @@ public class Program {
 		
 //		double p = (xA + xB + xC) / 2;
 //		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
-		double p = (x.a + x.b + x.c) / 2;
-		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+//		double p = (x.a + x.b + x.c) / 2;
+//		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+		double areaX = x.area();
 		
 //		p = (yA + yB + yC) / 2;
 //		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
-		p = (y.a + y.b + y.c) / 2;
-		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+//		p = (y.a + y.b + y.c) / 2;
+//		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+		double areaY = y.area();
 		
 		System.out.printf("Triângulo X area: %.4f%n", areaX);
 		System.out.printf("Triângulo Y area: %.4f%n", areaY);
@@ -51,6 +53,7 @@ public class Program {
 			System.out.println("Maiora area triângulo Y");
 		}
 
+		sc.close();
 	}
 
 }
