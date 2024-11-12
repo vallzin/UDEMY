@@ -17,31 +17,38 @@ public class Program {
 		x = new Triangle();
 		y = new Triangle();
 		
-		System.out.println("Digite as medidas do triângulo X: ");
+//		System.out.println("Digite as medidas do triângulo X: ");
 //		xA = sc.nextDouble();
 //		xB = sc.nextDouble();
 //		xC = sc.nextDouble();
-		x.a = sc.nextDouble();
-		x.b = sc.nextDouble();
-		x.c = sc.nextDouble();
-		System.out.println("Digite as medias do triângulo Y: ");
+		
+//		System.out.println("Digite as medias do triângulo Y: ");
 //		yA = sc.nextDouble();
 //		yB = sc.nextDouble();
 //		yC = sc.nextDouble();
-		y.a = sc.nextDouble();
-		y.b = sc.nextDouble();
-		y.c = sc.nextDouble();
 		
 //		double p = (xA + xB + xC) / 2;
 //		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
 //		double p = (x.a + x.b + x.c) / 2;
 //		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-		double areaX = x.area();
 		
 //		p = (yA + yB + yC) / 2;
 //		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
 //		p = (y.a + y.b + y.c) / 2;
 //		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+		
+		System.out.println("Digite as medidas do triângulo X: ");
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();		
+		
+		System.out.println("Digite as medias do triângulo Y: ");
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
+		
+		double areaX = x.area();
+		
 		double areaY = y.area();
 		
 		System.out.printf("Triângulo X area: %.4f%n", areaX);
