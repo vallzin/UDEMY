@@ -9,13 +9,13 @@ public class Employee {
 	
 
 	public double netSalary() {
-		return this.grossSalary - this.tax;
+		return grossSalary - tax;
 		
 	}
 	
 	public double increaseSalary() {
 		double salary = netSalary();
-		return salary += grossSalary * this.percentagem;
+		return salary += grossSalary * percentagem;
 		
 	}
 	
