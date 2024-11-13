@@ -20,11 +20,10 @@ public class RectangleProgram {
 		
 		
 		double area = rect.area();
-		System.out.println("AREA: "+ area);
 		double perimeter = rect.perimeter();
-		System.out.println("PERIMETER: " + perimeter);
 		double diagonal = rect.diagonal();
-		System.out.println("DIAGONAL: " + diagonal);
+		
+		System.out.println(rect);
 		
 		
 		sc.close();

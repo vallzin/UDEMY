@@ -27,4 +27,9 @@ public class Rectangle {
 		
 	}
 	
+	public String toString() {
+		return "AREA = " + area()
+				+ "\nPERIMETER = " + perimeter()
+				+ "\nDIAGONAL = " + diagonal();
+	}
 }
