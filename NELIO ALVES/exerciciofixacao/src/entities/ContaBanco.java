@@ -8,7 +8,7 @@ public class ContaBanco {
 	private String nome;
 	private double saldo;		
 
-	public ContaBanco(int numConta, String nome,double depositoInicio) {
+	public ContaBanco(int numConta, String nome, double depositoInicio) {
 		this.numConta = numConta;
 		this.nome = nome;
 		depositar(depositoInicio);
@@ -18,9 +18,6 @@ public class ContaBanco {
 		this.numConta = numConta;
 		this.nome = nome;
 	}
-
-
-
 
 	public String getNome() {
 		return nome;
@@ -36,10 +33,6 @@ public class ContaBanco {
 
 	public double getSaldo() {
 		return saldo;
-	}
-
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
 	}
 	
 	public void depositar(double valor) {	
