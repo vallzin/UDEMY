@@ -12,7 +12,8 @@ public class CotacaoDollar {
 	}
 
 	public String toString() {
-		return "Amount to be paid int reais = "+ String.format("%.2f", CurrencyConverter.total(price, quantity));
+		return "Amount to be paid int reais = "
+				+ String.format("%.2f", CurrencyConverter.total(price, quantity));
 	}
 	
 }

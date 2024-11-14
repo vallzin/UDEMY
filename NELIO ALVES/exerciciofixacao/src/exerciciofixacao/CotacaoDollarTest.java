@@ -18,6 +18,8 @@ public class CotacaoDollarTest {
 		ctDollar.quantity = sc.nextDouble();
 		
 		System.out.println(ctDollar);
+		
+		sc.close();
 
 	}
 
