@@ -21,15 +21,21 @@ public class Soma_Vetor {
 		}
 		
 		double soma = 0;
+		
 		for (int i = 0; i < array.length; i++) {
 			soma += array[i];
+			
 		}
-		System.out.printf("SOMA = %.2f", soma);
 		
-		double media = 0;
+		double media =  soma / array.length;
 		
-		media = soma / array.length;
+		System.out.print("VALORES = ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.printf("%.1f ", array[i]);
+			
+		}
 		
+		System.out.printf("\nSOMA = %.2f%n", soma);
 		System.out.printf("MÉDIA = %.2f", media);
 		
 		
