@@ -36,6 +36,8 @@ public class MaisVelho {
 		
 		System.out.println("PESSOA MAIS VELHA: "+ pessoa);
 		
+		sc.close();
+		
 		
 
 	}
