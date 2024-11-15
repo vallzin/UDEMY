@@ -38,7 +38,6 @@ public class Alturas {
 		
 		double menor16 = 0;
 		double menor16Percent = 0;
-		String[] nomeMenor16;
 		for (int i = 0; i < idades.length; i++) {			
 			if(idades[i] < 16) {
 				menor16++;

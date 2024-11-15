@@ -57,7 +57,7 @@ public class DadosPessoas {
 			}
 			
 		}
-		System.out.println("Média das alturas das mulheres = "+ media);
+		System.out.printf("Média das alturas das mulheres = %.2f", media);
 		System.out.println("Número de homens = "+ qtdM);
 		
 		sc.close();
