@@ -47,6 +47,15 @@ public class Program {
 		acc8.withdraw(200.00);
 		System.out.println(acc8.getBalance());
 		
+		Account x = new Account(1020, "Alex", 1000.00);
+		Account y = new SavingsAccount(1023, "Maria", 1000.00, 0.01);
+		
+		x.withdraw(50.00);
+		y.withdraw(50.00);
+		
+		System.out.println(x.getBalance());
+		System.out.println(y.getBalance());
+		
 
 	}
 
