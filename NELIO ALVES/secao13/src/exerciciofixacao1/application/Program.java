@@ -50,13 +50,21 @@ public class Program {
 				
 			}
 			
-			
-			System.out.println("TAXES PAID:");
-			for (TaxPayer taxP : txP) {
-				System.out.println(taxP);
-			}
-			
 		}
+		
+		System.out.println();
+		System.out.println("TAXES PAID:");
+		for (TaxPayer taxP : txP) {
+			System.out.println(taxP);
+		}
+		
+		double sum = 0.0;
+		for (TaxPayer taxP : txP) {
+			sum += taxP.tax();
+		}
+		
+		System.out.println("TOTAL TAXES: $ "+ String.format("%.2f", sum));
+		
 		
 		sc.close();
 

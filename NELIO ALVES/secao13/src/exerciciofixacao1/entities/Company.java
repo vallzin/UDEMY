@@ -20,8 +20,9 @@ public class Company extends TaxPayer{
 	public void setNumberOfEmployees(Integer numberOfEmployees) {
 		this.numberOfEmployees = numberOfEmployees;
 	}
-	
-	public Double taxPayerCompany() {
+
+	@Override
+	public double tax() {
 		
 		double taxPay = 0;
 		
@@ -32,12 +33,12 @@ public class Company extends TaxPayer{
 		}
 		
 		return taxPay;
-	}	
+	}
 	
 	public String toString() {
 		return getName()
 				+ ": $ "
-				+ String.format("%.2f", taxPayerCompany());
+				+ String.format("%.2f", tax());
 	}
 
 }

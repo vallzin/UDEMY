@@ -20,8 +20,9 @@ public class Individual extends TaxPayer{
 	public void setHeathExpediture(Double heathExpediture) {
 		this.heathExpediture = heathExpediture;
 	}
-	
-	public Double taxPayerIndividual() {
+
+	@Override
+	public double tax() {
 		
 		double taxPay = 0;
 		
@@ -45,7 +46,7 @@ public class Individual extends TaxPayer{
 	public String toString() {
 		return getName()
 				+ ": $ "
-				+ String.format("%.2f", taxPayerIndividual());
+				+ String.format("%.2f", tax());
 	}
 
 }
