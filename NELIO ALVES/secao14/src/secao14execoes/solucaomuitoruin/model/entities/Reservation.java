@@ -16,6 +16,8 @@ public class Reservation {
 		this.roomNumber = roomNumber;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
+		
+		
 	}
 
 	public Integer getRoomNumber() {
@@ -39,9 +41,21 @@ public class Reservation {
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 	}
 	
-	public void updateDates(Date checkIn, Date checkOut) {
+	public String updateDates(Date checkIn, Date checkOut) {
+		
+		Date now = new Date();
+		if(checkIn.before(now) || checkOut.before(now)) 
+		{
+			System.out.println("Error in reservation: Reservation dates for updates must be future dates");
+		}
+		else if(!checkOut.after(checkIn)) 
+		{
+			System.out.println("Error in reservation: check-out date must be after check-in date");
+		}
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
+		return null;
+
 	}
 	
 	@Override
