@@ -1,5 +1,7 @@
 package secao14exercicio.model.entities;
 
+import secao14exercicio.exceptions.BusinessException;
+
 public class Account {
 	
 	private Integer number;
@@ -53,12 +55,13 @@ public class Account {
 	
 	private void validateWithdraw(double amount) {
 		
-		if(amount > getWithdrawLimit()) {
-			throw new RuntimeException("Withdraw error: The amount exceeds withdraw limit");
-		} 
 		if(amount > getBalance()){
-			throw new RuntimeException("Not enough balance");
+			throw new BusinessException("Not enough balance");
+		}
+		if(amount > getWithdrawLimit()) {
+			throw new BusinessException("Withdraw error: The amount exceeds withdraw limit");
 		} 
+		 
 		
 	}
 

@@ -34,7 +34,7 @@ public class Program {
 		try {
 			acc.withdraw(amount);
 			System.out.println("New balance: " + acc.getBalance());
-		}catch(BusinessException e) {
+		}catch (BusinessException e) {
 			System.out.println(e.getMessage());
 		}
 								
