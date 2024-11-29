@@ -1,4 +1,4 @@
-package secao15trabalhandocomarquivos.filereaderbufferedreader;
+package secao15trabalhandocomarquivos.trywithresouces;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,12 +10,8 @@ public class Program {
 		
 		String path = "F:\\UDEMY\\NELIO ALVES\\in.txt";
 		
-		FileReader fr = null;
-		BufferedReader br = null;
-		try
+		try(BufferedReader br = new BufferedReader(new FileReader(path)))
 		{
-			fr = new FileReader(path);
-			br = new BufferedReader(fr);
 			
 			String line = br.readLine();
 			
@@ -30,24 +26,7 @@ public class Program {
 		{
 			System.out.println("Error: " + e.getMessage());
 		}
-		finally
-		{
-			try
-			{
-				if( br != null)
-				{
-					br.close();
-				}
-				if( fr != null)
-				{
-					fr.close();
-				}
-			}
-			catch(IOException e)
-			{
-				e.printStackTrace();
-			}
-		}
+		
 
 	}
 
