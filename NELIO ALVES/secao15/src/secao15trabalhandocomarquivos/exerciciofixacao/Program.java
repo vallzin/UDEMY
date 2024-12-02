@@ -1,8 +1,5 @@
 package secao15trabalhandocomarquivos.exerciciofixacao;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -34,7 +31,6 @@ public class Program {
 			System.out.print("Digite o preço: ");
 			double price = sc.nextDouble();
 			System.out.print("Digite a quantidade: ");
-			sc.nextLine();
 			int quantity = sc.nextInt();
 			
 			Product produto = new Product(name, price, quantity);
@@ -49,18 +45,19 @@ public class Program {
 		
 		sourceFile.addProd();
 		sourceFile.addFolder();
+		System.out.println(sourceFile.getPath());
 		
 		System.out.println("Digite o caminho e o nome do arquivo de reescrita: ");
 		String filePath = sc.next();
 		
 		sourceFile.setPath(filePath);
+		System.out.println(sourceFile.getPath());
 		
 		sourceFile.calcProd();
+		System.out.println(sourceFile.getPath());
 
 		sc.close();
 
-	}
-	
-	
+	}	
 
 }

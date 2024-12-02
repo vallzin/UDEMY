@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SourceFile {
-	
+
 	private String path;
 	private String fileName;
 	private List<Product> prod = new ArrayList<>();
-	
+
 	public SourceFile() {
 	}
 
@@ -21,8 +21,8 @@ public class SourceFile {
 		this.fileName = fileName;
 		this.prod = prod;
 	}
-	
-	
+
+
 
 	public String getFileName() {
 		return fileName;
@@ -47,7 +47,7 @@ public class SourceFile {
 	public void setPath(String path) {
 		this.path = path;
 	}
-	
+
 	public void addProduct(Product product) {
 		prod.add(product);
 	}
@@ -62,28 +62,28 @@ public class SourceFile {
 			e.getMessage();
 		}
 	}
-	
+
 	public void addFolder() {
-		
+
 		File folder = new File(path);
 		String targetPath = folder.getParent();
-		
+
 		boolean success = new File(targetPath + "\\out").mkdir();
-		
+
 		System.out.println("Folder created: " + success);
 	}
-	
+
 	public void calcProd() {
-		
+
 		File newPath = new File(path);
 		String pathCompleto = newPath.getPath();
-		
+
 		try(BufferedWriter wr = new BufferedWriter(new FileWriter(pathCompleto, true))){
 			for (Product p : prod) {
 				wr.write(p.getName() + ", "+ String.format("%.2f", p.total()));
 				wr.newLine();
 			}
-		
+
 		}catch(IOException e) {
 			System.out.println("Error writing file: "+ e.getMessage());
 		}
