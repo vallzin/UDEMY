@@ -6,7 +6,6 @@ public class Employee implements Comparable<Employee>{
 	private Double salary;
 	
 	public Employee(String name, Double salary) {
-		super();
 		this.name = name;
 		this.salary = salary;
 	}
