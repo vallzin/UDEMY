@@ -8,6 +8,7 @@ import java.util.Scanner;
 import secao16.interfaces.exerciciofixacao.entities.Contract;
 import secao16.interfaces.exerciciofixacao.entities.Installment;
 import secao16.interfaces.exerciciofixacao.services.ContractService;
+import secao16.interfaces.exerciciofixacao.services.PaypalService;
 
 public class Program {
 	
@@ -33,7 +34,7 @@ public class Program {
 		int n = sc.nextInt();
 		
 		
-		ContractService contractService = new ContractService(null);
+		ContractService contractService = new ContractService(new PaypalService());
 		
 		contractService.processContract(obj, n);
 		
