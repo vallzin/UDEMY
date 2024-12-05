@@ -1,9 +1,3 @@
-Maria Brown
-Alex Green
-Bob Grey
-Anna White
-Alex Black
-Eduardo Rose
-Willian Red
-Marta Blue
-Alex Brown
+Computer, 890.50
+Iphone X, 910.00
+Tablet, 550.00
