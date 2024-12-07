@@ -34,7 +34,8 @@ public class Program {
 			System.out.print("Total user: " + set.size());						
 		}catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
-		}			
+		}		
+		
 		sc.close();		
 	}
 }
