@@ -18,7 +18,8 @@ public class Program {
 		list.add(new Product("HD case", 80.00));
 
 //		list.removeIf(p -> p.getPrice() >= 100);
-		list.removeIf(new ProductPredicate());
+//		list.removeIf(new ProductPredicate());
+		list.removeIf(Product::staticProductPredicate);
 		
 		
 		for(Product p : list) {
