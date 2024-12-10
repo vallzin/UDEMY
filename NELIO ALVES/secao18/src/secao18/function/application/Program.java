@@ -35,6 +35,7 @@ public class Program {
 //		Function<Product, String> func  = p -> p.getName().toUpperCase();
 //		List<String> names = list.stream().map(func).collect(Collectors.toList());
 		
+//		Expressão lambda inline
 		List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
