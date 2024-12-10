@@ -32,6 +32,7 @@ public class Program {
 //		Expressão lambda declarada
 //		Consumer<Product> cons = p -> p.setPrice(p.getPrice() * factor);
 		
+//		Expressão lambda inline
 		list.forEach(p -> p.setPrice(p.getPrice() * factor));
 		
 		list.forEach(System.out::println);
