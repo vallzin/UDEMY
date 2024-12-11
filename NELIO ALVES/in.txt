@@ -1,9 +1,6 @@
-Alex Blue,15
-Maria Green,22
-Bob Brown,21
-Alex Blue,30
-Bob Brown,15
-Maria Green,27
-Maria Green,22
-Bob Brown,25
-Alex Blue,31
+TV,900.00
+Mouse,50.00
+Tablet,350.50
+HD Case,80.00
+Computer,850.50
+Monitor,290.00
