@@ -23,6 +23,12 @@ public class Program2 {
 		for (Department d : list) {
 			System.out.println(d);
 		}
+		
+		System.out.println();
+		System.out.println("----- *** Test 3 Department insert *** -----");
+		Department department = new Department(null, "Sport");
+		depDao.insert(department);
+		System.out.println(department);
 
 	}
 }
